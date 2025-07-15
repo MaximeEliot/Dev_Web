@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+    <link rel="Stylesheet" href="CSS/index.css">
+    <link rel="Stylesheet" href="CSS/header_footer.css">
+    <link rel="Icon" href="Images/logo_app.png">
+        <meta charset="utf-8">
+        <meta name="Description" content="Page Principale">
+        <meta name="Auteurs" content="Lounès FARINES; Maxime ELIOT; Lucas POT">
+        <meta name="viewport" content="width=device, initial-scale=1">
+        <title>Greenpaths</title>
+    </head>
+    <body>
+        <header>
+            <ul>       
+                <li><a href="index.html"><img src="Images/logo.png" width="150" height="150" alt="Logo de l'entreprise" class="logos"></a></li>
+            </ul>
+            <ul class="menu">
+                <li>
+                    <nav>
+                        <svg onclick="CloseMenuMobile()" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                          </svg>
+                        <a class="choisi" href="index.html">Présentation Générale</a>
+                        <a href="HTML/partners.html">Nos partenaires</a>
+                        <a href="HTML/founders.html">Qui sommes nous ?</a>
+                        <a href="HTML/questions.html">F.A.Q</a>
+                    </nav>
+                </li>
+            </ul>
+            
+            <svg onclick="OpenMenuMobile()" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+            
+        </header>
+        <main>
+        <h2>Présentation de l'entreprise et de notre produit</h2>
+        <div>
+            <section>
+                <h3> Qu'est-ce que Greenpaths ?</h3>
+                <p>Greenpaths est une toute nouvelle start-up, créée en 2024 par trois co-fondateurs alors étudiants.</p>
+                <p>Elle vous propose un tout nouveau service de cartographie en ligne, accessible depuis un navigateur, mais également depuis une application téléchargeable gratuitement depuis <a href="https://www.apple.com/fr/app-store/" target="_blank">l'App Store</a> (sous I.O.S)*
+                ou <a href="https://play.google.com/store/apps?gl=FR" target="_blank">le Play Store</a> (sous Android)*.</p>
+                <p id="thirdp">C'est un service de cartographie qui a à coeur<strong> de mettre l'écologie et les modes de transport verts au centre des habitudes de déplacement du plus grand nombre</strong>.</p>
+                <p id="precision">* Si les liens imbriqués dans le texte ci dessus ne fonctionnent pas, vous pouvez retrouver l'application en tapant directement <em>Greenpaths</em> dans la barre de recherche du magasin d'applications que vous utilisez.</p>
+            </section>
+            <aside>
+                <img src="Images/nav21_map.png" alt="Illustration de navigation" id="img1" class="images">
+            </aside>
+        </div>
+        <div>
+
+            <section id="section2">
+	            <h3>Quelle est la raison d'être de notre produit ?</h3>
+	            <p>L'idée de proposer un service de cartographie en ligne mettant l'accent sur l'écologie et les modes de transport verts est parti d'un constat simple :<strong> La lutte contre le changement climatique est l'un des combats les plus importants du XXIème siècle.</strong></p>
+                <p>Il se trouve que l'un des facteurs qui participent le plus au changement climatique est l'émission de CO2 liée aux activités humaines. En effet, d'après le cabinet de conseil <a href="https://www.carbone4.com/decryptage-giec-transports" target="_blank">Carbone4</a>, qui cite le rapport du groupe III du GIEC (paru en 2022), en 2022 l'humanité à émis<strong> 56 <abbr title="Gigatonne d'équivalent C02">GtC02e</abbr></strong>.</p>
+                <p>Or, en observant plus précisément la répartition des émissions de C02 par secteur, on s'apperçoit que le secteur des transports y contribue à hauteur de <strong>15% (8.7GtCO2e)</strong>. De plus,<strong> 70% de ces emissions provenaient du transport routier</strong>.</p>
+                <p>Sachant donc qu'en l'abscence d'actions, on estime que les émissions de C02 du secteur des transports devraient augmenter de 16 à 50%, il nous semblait intéressant de proposer une solution permettant à chacun de combattre le réchauffement climatique, en diminuant ses propres émissions de C02 liés aux déplacements quotidiens.</p>
+                <p>Voici donc la raison d'être de notre produit : <strong>avoir un impact positif sur l'environnement</strong>.</p>
+            </section>
+            <aside id="section2">
+                <img src="Images/cars-scaled.jpg" alt="Illustration de la pollution routière" id="img2" class="images">
+            </aside>
+        </div>
+        <div>
+            <section>
+                <h3> Quelles sont les fonctionalités de notre produit ?</h3>
+                <p>Afin de permettre à chacun de réduire ses émissions de C02 liés aux déplacements, notre produit propose un certain nombre de fonctionalités spécifiques à l'écologie, en plus de celles habituellement présentes sur les services de cartographie en ligne.</p>
+                <p>Tout d'abord, lors du choix d'un trajet sur ce dernier, il <strong>affichera les émissions de C02 estimées pour chacun des moyens de déplacement disponible</strong> pour le dit trajet.</p>
+                <p>Deuxièmement, il sera possible de filtrer les moyens de déplacements pour que soit proposé en premier:</p>
+                <ul class="filters">
+                    <li>Soit <strong>le plus écologique</strong>;</li>
+                    <li>Soit <strong>le plus rapide</strong>;</li>
+                    <li>Soit <strong>celui qui offre le meilleur compromis entre ces deux facteurs</strong>.</li>
+                </ul>
+                <p>Vous pouvez enregistrer cette préférence dans votre profil utilisateur (<em>fonctionalité en cours de tests sur l'application mobile</em>).</p>
+                <p>Enfin, nous avons noué des partenariats avec plusieurs entreprises majeures du secteur des transports en commun (veuillez vous référer à la page "Nos partenaires" pour plus de précisions sur lequels). Grace à ces partenariats, nous pouvons <strong>inclure les VTC, les covoiturages ou les bus longue durée dans notre application</strong>. Il est ainsi possible de voir les disponibilités, les temps d'attente et le prix estimé de ces modes de déplacement. En cas de choix d'un de ces derniers pour se déplacer, vous êtes automatiquement redirigés vers le site ou l'application de nos partenaires.</p>
+            </section>
+            <aside>
+                <img src="Images/logo_app.png" alt="Logo de l'application" id="img3" class="images">
+            </aside>
+        </div>
+        <a href="#" id="Scroll_up"><img src="Images/pointing-up-finger.svg" height="40" width="40" alt="Scroll up button"></a>
+        </main>
+        <footer>
+            <ul class="other">
+                <li><a href="https://www.instagram.com/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" width="30" height="30" alt="instagram logo"></a></li>
+                <li><a href="https://x.com/?lang=fr&mx=2" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Twitter_X.png/640px-Twitter_X.png" width="30" height="30" alt="X logo"></a></li>
+                <li><a href="https://www.facebook.com/?locale=fr_FR" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/640px-2021_Facebook_icon.svg.png" width="30" height="30" alt="Facebook logo"></a></li>
+                <li><a href="https://fr.linkedin.com/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Linkedin-web-vt.png/640px-Linkedin-web-vt.png" width="30" height="30" alt="Linkedin logo"></a></li>
+            </ul>
+            <ul class="other">
+                <li><p>Copyright 2024: Lounès FARINES; Lucas POT; Maxime ELIOT</p></li>
+            </ul>
+            <ul>
+                <li><img src="Images/IUT_Sénart-Fontainebleau_logo.png" height="150" width="150" alt="Logo UPEC"></li></ul>
+            <ul id="legal">
+                <li><h4>Mentions Légales:</h4></li>
+                <li><p><em>Identité de l'entreprise:</em> Greenpaths SA, 55 Rue du Faubourg Saint Honoré, 75008 Paris</p></li>
+                <li><p><em>Imatriculation RCS:</em> PARIS B 517 403 572</p></li>
+                <li><p><em>Contact:</em> webmestre@greenpaths.fr / 01 05 60 94 56</p></li>
+                <li><p><em>Numéro d'identification à la TVA:</em> FR 32 517403572</p></li>
+                <li><p><em>Hébergeur du Site:</em> Dwarves</p></li>
+            </ul>
+            <ul class="other">
+                <li><a href="HTML/contact.html">Contactez Nous !</a></li>
+            </ul>
+        </footer>
+        <script src="JS/menu.js"></script>
+    </body>
+</html>

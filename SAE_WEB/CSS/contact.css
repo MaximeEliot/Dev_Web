@@ -1,0 +1,67 @@
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
+    margin: 4em;
+    padding: 2em;
+    border-radius: 1em;
+    border: solid black 0.3em;
+    box-shadow: 0.75em 0.75em 0.5em gray;
+    align-items: center;
+}
+
+h2 {
+    text-align: center;
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+p {
+    text-align: left;
+    padding-bottom: 0.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+
+form div {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+form div :nth-child(1){
+    margin-top: 5em;
+}
+
+
+label {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
+}
+
+input {
+    background-color: white;
+    border-radius: 0.25em;
+    padding: 1em;
+}
+
+textarea {
+    background-color: white;
+    border-radius: 0.25em;
+    padding: 1em;
+    width: 500px;
+    text-align: center;
+    
+
+}
+
+.requis {
+    color: red;
+}
+

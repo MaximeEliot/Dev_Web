@@ -1,0 +1,103 @@
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 400;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    padding-bottom: 1em;
+}
+
+p a {
+    font-size: 1em;
+}
+
+#thirdp {
+    margin-bottom: 2em;
+}
+
+#precision {
+    color: red;
+    padding-bottom: 0em;
+}
+
+div {
+    display: flex;
+    flex-direction: row;
+    margin: 4em;
+
+}
+
+section{
+    width: 50%;
+    background-color: lightgreen;
+    padding: 2em;
+    border-radius: 0.25em;
+    box-shadow: 0.5em 0.5em 0.25em gray;
+}
+
+aside {
+    width: 50%;
+    object-fit: contain;
+}
+
+.images {
+    border-radius: 0.25em;
+    width: 100%;
+    height: 100%;
+
+}
+
+#img1 {
+    margin-left: 2em;
+}
+
+#section2 {
+    margin-left: 4em;
+}
+#img3 {
+    margin-left: 2em;
+    margin-top: 0.7em;
+}
+
+.filters {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    list-style-type: square;
+    margin-left: 4em;
+    margin-bottom:1em;
+}
+
+@media all and (max-width: 1075px) {
+
+    div {
+        flex-direction: column;
+    }
+
+    section {
+        width: 75%;
+    }
+
+    aside {
+        width: 85%;
+        padding-top: 4%;
+        box-shadow: 0.5em 0.5em 0.25em gray;
+    }
+}

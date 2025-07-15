@@ -1,0 +1,99 @@
+body{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 0,5fr 1fr 1fr 1fr;
+    font-family: Helvetica, sans-serif;
+    margin-left: 15%;
+    margin-right:15%;
+}
+header{
+    grid-column: 2;
+    grid-row: 1;
+    padding:5%;
+    color:#10375D;
+}
+header h3{
+    color:#296297 ;
+}
+
+aside{
+    grid-column:1;
+    grid-row: 1/5;
+    background-color: #10375D;
+    color: white;
+    padding-left: 10%;
+}
+
+aside img{
+    border: solid;
+    border-radius: 25%;
+    margin-left: 20%;
+    margin-right: 15%;
+    margin-top: 10%;
+    width: 50%;
+}
+
+aside ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+aside ul img{
+    border:none;
+    height :10%;
+    width: 10%;
+    padding:0;
+    margin:1%;
+}
+
+main{
+ 
+    grid-column: 2;
+    grid-row: 2/5;
+    padding-left: 3%;
+    color: #296297;
+}
+main p{
+    font-size:10;
+}
+main h3{
+    color: #10375D;
+}
+
+
+.info{
+    padding-top:0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.niveaux{
+    grid-column: 1;
+}
+.projets{
+    grid-column: 2;
+}
+
+.date{
+    text-decoration-line: underline;
+    font-weight: normal;
+}
+
+.gras{
+    font-weight: bold;
+    font-style: normal;
+}
+
+@media print {
+    body{
+	padding:0;
+	margin:0;
+	width:21cm;
+	heigth:29,7cm;
+    }
+    main{
+	grid-row: 2/4;
+	font-size:88%;
+    }
+}
+	

@@ -1,0 +1,179 @@
+* {
+    margin:0;
+    padding:0;
+}
+.choisi {
+    color: white;
+    text-decoration: underline white;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+header {
+    background-color: green;
+    padding-top: 0; 
+    padding-bottom: 0;
+    position: sticky;
+    top: 0;
+    box-shadow: 0.25em 0.25em 0.25em gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    z-index: 1;
+}
+
+header ul{
+    list-style-type: none;
+    margin-left: 2em;
+    margin-right: 4em;
+}
+
+svg {
+    height: 5%;
+    width: 5%;
+    stroke: black;
+    padding: 0;
+    border: 0;
+    display: none;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+header li a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    padding-top: 2.5em;
+    margin-left: 2em;
+
+}
+
+header li nav a:hover {
+    border-bottom:solid black;
+
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: green;
+    padding: 2em; 
+    grid-row: 1;
+    position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 300;
+    border-top: 0.5em solid black;
+    bottom: 0;
+    height: max-content;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    margin-right: 4em;
+}
+
+footer li {
+    list-style-type: none;
+    padding-left: 0.5em;
+}
+
+footer a {
+    font-weight: 500;
+}
+
+footer p {
+    margin:0;
+    padding:0.2em
+}
+
+footer h4 {
+    padding:0.2em;
+    font-weight: 800;
+}
+
+footer #legal {
+    flex-direction: column;
+}
+
+footer .other {
+    margin-top: 4.5em;
+}
+
+#Scroll_up {
+    position: fixed;
+    bottom: 15%;
+    right: 0;
+    z-index: 1;
+}
+
+@media all and (max-width: 1075px) {
+    * {
+        font-size: small;
+    }
+
+    header {
+        flex-direction: row;
+        width:100% ;
+        height: max-content;
+        padding-bottom: 2%;
+    }
+
+    ul.menu nav{
+        position: fixed;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        top: 0;
+        right: 0;
+        width: 30%;
+        height: 75%;
+        background-color: green;
+        display: none;
+        transform: translateX(100%);
+        transition: 0.3s transform ease-in-out;
+    }
+
+    svg {
+        display: block;
+        top: 15px;
+        right: 15px;
+        cursor: pointer;
+    }
+    svg[onclick="OpenMenuMobile()"].open { 
+        display: none;
+    }
+    
+    nav svg {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        height: 15%;
+        width: 15%;
+        cursor: pointer;
+
+    }
+
+    ul.menu nav.open {
+        transform: initial;
+        display: flex;
+
+    }
+
+    footer {
+        flex-direction: column;
+        height: max-content;
+        
+    }
+
+
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+    <link rel="Stylesheet" href="../CSS/header_footer.css">
+    <link rel="Stylesheet" href="../CSS/contact.css">
+	<link rel="Icon" href="../Images/logo_app.png">
+        <meta charset="utf-8">
+        <meta name="Description" content="Formulaire de contact">
+        <meta name="Auteurs" content="Lounès FARINES; Maxime ELIOT; Lucas POT">
+		<meta name="viewport" content="width=device, initial-scale=1">
+        <title>Greenpaths</title>
+    </head>
+    <body>
+        <header>
+            <ul>       
+                <li><a href="../index.html"><img src="../Images/logo.png" width="150" height="150" alt="Logo de l'entreprise" class="logos"></a></li>
+            </ul>
+            <ul class="menu">
+                <li>
+                    <nav>
+                        <svg onclick="CloseMenuMobile()" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                          </svg>
+                        <a href="../index.html">Présentation Générale</a>
+                        <a href="partners.html">Nos partenaires</a>
+                        <a href="founders.html">Qui sommes nous ?</a>
+                        <a href="questions.html">F.A.Q</a>
+                    </nav>
+                </li>
+            </ul>
+            <svg onclick="OpenMenuMobile()" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+            
+        </header>
+	<form method="POST">
+	  <h2>Formulaire de contact :</h2>
+		<p class="instructions">Une question (qui n'est pas dans la F.A.Q), une suggestion sur nos produits; ou tout autre message que vous souhaitez nous faire passer ? N'hesitez pas à nous contacter !</p>
+		<p class="instructions"> Toutes les données collectées ont pour but d'aider dans le traitement de votre message: Elles sont effacées une fois votre requête traitée.</p>
+		<div>
+			<label class="requis"> * : Champ obligatoire.</label>
+		</div>
+		<div>
+		    <label class="requis">* </label>
+		    <label>Sexe :</label>
+		    <input type="radio" name="gender" id="femme" value="Madame" required>
+		    <label for="femme">Femme </label>
+		    <input type="radio" name="gender" id="homme" value="Monsieur" required>
+		    <label for="homme">Homme </label>
+		</div>
+		<div>
+		  <label class="requis">* </label>
+		  <label for="lastname">Nom : </label>
+		  <input type="text" name="lastname" id="lastname" placeholder="ex: Dupont" required>
+		</div>
+		<div>
+		  <label class="requis">* </label>
+		  <label for="firstname">Prénom : </label>
+		  <input type="text" name="firstname" id="firstname" placeholder="ex: Pierre" required>
+		</div>
+		<div>
+		  <label for="birthdate">Date de naissance : </label>
+		  <input type="date" name="birthdate" id="birthdate">
+		</div>
+		<div>
+		  <label class="requis">* </label>
+		  <label for="email">Adresse email : </label>
+		  <input type="email" name="email" id="email" placeholder="ex: pierre.dupont@gmail.com" required>
+		</div>
+		<div>
+		  <label for="phonenumber">N° Télephone portable : </label>
+		  <input type="text" name="phonenumber" id="phonenumber" placeholder="ex: 0623670329" pattern="^(\+33|0)[6-7](\d\d){4}$">
+		</div>
+		<div>
+		  <label class="requis">* </label>
+		  <label for="message">Message : </label>
+		</div>
+		<textarea name="message" id="message" placeholder="Votre message ..." required></textarea>
+		<div>
+		  <input type="submit" value="Envoyer" id="send">
+		  <input type="reset" value="Recommencer" id="restart">
+		</div>
+	</form>
+	<a href="#" id="Scroll_up"><img src="../Images/pointing-up-finger.svg" height="40" width="40" alt="Scroll up button"></a>
+	<footer>
+		<ul class="other">
+			<li><a href="https://www.instagram.com/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" width="30" height="30" alt="instagram logo"></a></li>
+			<li><a href="https://x.com/?lang=fr&mx=2" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Twitter_X.png/640px-Twitter_X.png" width="30" height="30" alt="X logo"></a></li>
+			<li><a href="https://www.facebook.com/?locale=fr_FR" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/640px-2021_Facebook_icon.svg.png" width="30" height="30" alt="Facebook logo"></a></li>
+			<li><a href="https://fr.linkedin.com/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Linkedin-web-vt.png/640px-Linkedin-web-vt.png" width="30" height="30" alt="Linkedin logo"></a></li>
+		</ul>
+		<ul class="other">
+			<li><p>Copyright 2024: Lounès FARINES; Lucas POT; Maxime ELIOT</p></li>
+		</ul>
+		<ul>
+			<li><img src="../Images/IUT_Sénart-Fontainebleau_logo.png" height="150" width="150" alt="Logo UPEC"></li></ul>
+		<ul id="legal">
+			<li><h4>Mentions Légales:</h4></li>
+			<li><p><em>Identité de l'entreprise:</em> Greenpaths SA, 55 Rue du Faubourg Saint Honoré, 75008 Paris</p></li>
+			<li><p><em>Imatriculation RCS:</em> PARIS B 517 403 572</p></li>
+			<li><p><em>Contact:</em> webmestre@greenpaths.fr / 01 05 60 94 56</p></li>
+			<li><p><em>Numéro d'identification à la TVA:</em> FR 32 517403572</p></li>
+			<li><p><em>Hébergeur du Site:</em> Dwarves</p></li>
+		</ul>
+		<ul class="other">
+			<li><a class="choisi" href="contact.html">Contactez Nous !</a></li>
+		</ul>
+	</footer>
+	<script src="../JS/menu.js"></script>
+    </body>
+</html>
